@@ -5,9 +5,8 @@ import { AuthService } from './auth.service';
 export class AuthController {
   constructor(private readonly AuthService: AuthService) {}
 
-  @Post('registor')
+  @Post('register')
   async register(@Body() dto: any) {
-    return this.AuthService.register(dto)
+    return this.AuthService.register(dto);
   }
-
 }
