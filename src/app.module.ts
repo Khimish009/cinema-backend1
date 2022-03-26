@@ -16,7 +16,7 @@ import { UserModule } from './user/user.module';
       useFactory: getMongoDbConfig,
     }),
     AuthModule,
-    UserModule
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
